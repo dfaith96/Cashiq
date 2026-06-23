@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Cashiq</title>
+  <style>
+    :root {
+      --ink: #111827;
+      --muted: #5f6b7a;
+      --line: #dbe3ee;
+      --paper: #eaf8f3;
+      --blue: #155eef;
+      --teal: #0f8f8c;
+      --dark: #06201d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(135deg, #0b7a53 0%, #218358 52%, #06201d 100%);
+      font-family: Inter, Segoe UI, Arial, sans-serif;
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .wrap {
+      width: min(980px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      background: rgba(6, 32, 29, 0.96);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .nav {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      font-size: 1.15rem;
+      color: white;
+    }
+
+    .logo {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background: linear-gradient(135deg, var(--blue), var(--teal));
+      border-radius: 8px;
+    }
+
+    .btn {
+      min-height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px 15px;
+      color: white;
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.26);
+      font-weight: 900;
+    }
+
+    .hero {
+      color: white;
+      background: linear-gradient(135deg, #06201d, #218358);
+      padding: 66px 0 54px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.3rem, 6vw, 4.4rem);
+      line-height: 1;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 12px 0 0;
+      color: #dce9ff;
+      font-size: 1.05rem;
+    }
+
+    main {
+      padding: 48px 0 72px;
+      background: linear-gradient(135deg, #0b7a53, #218358);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 22px;
+      align-items: start;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(17, 24, 39, 0.07);
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.45rem;
+    }
+
+    p,
+    li,
+    label {
+      color: var(--muted);
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .contact-item {
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfdff;
+    }
+
+    .contact-item strong {
+      display: block;
+      color: var(--ink);
+    }
+
+    form {
+      display: grid;
+      gap: 14px;
+    }
+
+    label {
+      display: grid;
+      gap: 7px;
+      font-weight: 800;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 11px 12px;
+      font: inherit;
+    }
+
+    textarea {
+      min-height: 132px;
+      resize: vertical;
+    }
+
+    .submit {
+      color: white;
+      background: var(--blue);
+      border: 0;
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    footer {
+      background: var(--dark);
+      color: #b8c7dd;
+      padding: 26px 0;
+    }
+
+    footer .wrap {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    footer a {
+      color: white;
+      font-weight: 800;
+    }
+
+    .copyright {
+      flex-basis: 100%;
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+      padding-top: 16px;
+      margin-top: 6px;
+    }
+
+    @media (max-width: 760px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="index.html">
+        <span class="logo">CQ</span>
+        <span>Cashiq</span>
+      </a>
+      <a class="btn" href="index.html">Back to Website</a>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="wrap">
+      <h1>Contact Cashiq</h1>
+      <p>Talk to Cashiq about smart cash flow forecasting, finance management AI, invoice tracking, and budget control.</p>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <div class="grid">
+      <section class="card">
+        <h2>Reach Us</h2>
+        <p>Use the contact details below for demo requests, finance workflow questions, partnership discussions, or support.</p>
+        <div class="contact-list">
+          <div class="contact-item">
+            <strong>Email</strong>
+            <a href="mailto:hello@cashiq.sbs">hello@cashiq.sbs</a>
+          </div>
+          <div class="contact-item">
+            <strong>Focus</strong>
+            Smart cash flow and finance management AI
+          </div>
+          <div class="contact-item">
+            <strong>Best For</strong>
+            Business owners, finance teams, operators, and growing companies
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Send a Message</h2>
+        <form action="mailto:hello@cashiq.sbs" method="post" enctype="text/plain">
+          <label>
+            Name
+            <input name="name" type="text" placeholder="Your name" />
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" placeholder="you@example.com" />
+          </label>
+          <label>
+            Interest
+            <select name="interest">
+              <option>Cash flow forecasting</option>
+              <option>Invoice tracking</option>
+              <option>Budget intelligence</option>
+              <option>Finance AI demo</option>
+            </select>
+          </label>
+          <label>
+            Message
+            <textarea name="message" placeholder="Tell us what you want Cashiq to help with"></textarea>
+          </label>
+          <button class="submit" type="submit">Send Message</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-and-conditions.html">Terms and Conditions</a>
+      <span class="copyright">&copy; 2026 Cashiq. All rights reserved.</span>
+    </div>
+  </footer>
+</body>
+</html>
